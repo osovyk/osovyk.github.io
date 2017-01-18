@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- FontAwesome CDN -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/main.css">
+  <title>Document</title>
+</head>
+<body data-spy="scroll" data-target="#navbar">
+<nav id="navbar" class="navbar navbar-toggleable-md navbar-inverse fixed-top">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#"><img src="img/logo.jpeg" alt="logo" class="logo"></a>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#goods">
+          <i class="nav-icon"><img src="fonts/icon-sell.svg" alt="nav-icon" class=""></i>
+          <span>замовлення</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#advantages">
+          <i class="nav-icon"><img src="fonts/icon-.svg" alt="nav-icon" class=""></i>
+          <span>переваги</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#partners">
+          <i class="nav-icon"><img src="fonts/icon-partners.svg" alt="nav-icon" class=""></i>
+          <span>партнери</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#news">
+          <i class="nav-icon"><img src="fonts/icon-news.svg" alt="nav-icon" class=""></i>
+          <span>новини</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#footer">
+          <i class="nav-icon"><img src="fonts/icon-contacts.svg" alt="nav-icon" class=""></i>
+          <span>контакти</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+  <article id="goods">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-8 good">
+          <div class="row">
+            <section class="col-12 col-md-6">
+              <img src="img/goods-max.png" alt="goods-max" class="img-fluid">
+              <div class="price price-max text-center">
+                <p>MAX</p>
+                <p>250 грн</p>
+              </div>
+            </section>
+            <section class="col-12 col-md-6">
+              <img src="img/goods-mini.png" alt="goods-mini" class="img-fluid">
+              <div class="price price-mini text-center">
+                <p>MINI</p>
+                <p class="small">Очікується</p>
+              </div>
+            </section>
+          </div>
+  
+        </div>
+        <div class="col-12 col-lg-4">
+          <h3 class="text-center">Форма замовлення</h3>
+          <form id="contact-form" role="form" method="post" action="contact.php">
+            <div class="messages"></div>
+            <div class="form-group">
+                <label for="name" class="control-label sr-only">П. І. Б.</label>
+                <div class="">
+                    <input type="text" class="form-control form-control-sm" id="name" name="name" placeholder="Прізвище, ім’я, по-батькові" value="">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="tel" class="control-label sr-only">Номер телефону</label>
+                <div class="">
+                    <input type="tel" class="form-control form-control-sm" id="tel" name="name" placeholder="Номер телефону" value="">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="city" class="control-label sr-only">Населений пункт</label>
+                <div class="">
+                    <input type="text" class="form-control form-control-sm" id="city" name="city" placeholder="Населений пункт" value="">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="number-np" class="control-label sr-only">Номер відділення Нової пошти</label>
+                <div class="">
+                    <input type="number" class="form-control form-control-sm" id="number-np" name="number-np" placeholder="Номер відділення Нової пошти" value="">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="form-group">
+              <label for="type" class="sr-only">Кількість чисток</label>
+              <select class="form-control form-control-sm" id="type">
+                <option>На 100 чисток</option>
+                <!-- <option>На 10 чисток</option> -->
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="quantity" class="control-label sr-only">Кількість комплектів</label>
+              <input type="number" class="form-control form-control-sm" id="quantity" name="quantity" placeholder="Кількість комплектів" value="">
+              <div class="help-block with-errors"></div>
+            </div>
+            <div class="form-group radio-btn">
+              <legend class="col-form-legend col-12"><strong>Форма оплати</strong></legend>
+              <div class="col-12">
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                      Наложним платежем
+                  </label>
+                </div>
+                <div class="form-check disabled">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2" disabled>
+                      Безготівковий розрахунок
+                  </label>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-success btn-send">Відправити замовлення</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </article>
+  <hr>
+
+  <article id="advantages">
+    <header>
+      <h1 class="text-center display-4">Переваги</h1>
+    </header>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-4">
+          <div class="container">
+            <h3 class="lead">Зручний для всіх видів зброї</h3>
+            <div class="row">
+              <div class="col-4">
+                <img src="img/img1-1.jpg" alt="" class="img-fluid img-thumbnail">
+              </div>
+              <div class="col-4">
+                <img src="img/img1-2.jpg" alt="" class="img-fluid img-thumbnail">
+              </div>
+              <div class="col-4">
+                <img src="img/img1-3.jpg" alt="" class="img-fluid img-thumbnail">
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <h3 class="lead">знімає будь які види забруднень</h3>
+            <div class="row">
+              <div class="col-4">
+                <img src="img/img1-1.jpg" alt="" class="img-fluid img-thumbnail">
+              </div>
+              <div class="col-4">
+                <img src="img/img1-2.jpg" alt="" class="img-fluid img-thumbnail">
+              </div>
+              <div class="col-4">
+                <img src="img/img1-3.jpg" alt="" class="img-fluid img-thumbnail">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 bg-red">
+          <div class="row advantages-icon">
+            <div class="col-6 col-lg-12 text-center">
+              <img src="fonts/time.svg" alt="" class="img-fluid">
+              <h4>збереження часу</h4>
+            </div>
+            <div class="col-6 col-lg-12 text-center">
+              <img src="fonts/usage.svg" alt="" class="img-fluid">
+              <h4>зручність</h4>
+            </div>
+            <div class="col-6 col-lg-12 text-center">
+              <img src="fonts/double.svg" alt="" class="img-fluid">
+              <h4>подвійне використання</h4>
+            </div>
+            <div class="col-6 col-lg-12 text-center">
+              <img src="fonts/econom.svg" alt="" class="img-fluid">
+              <h4>укономія ресурсів</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="container">
+            <h3 class="lead">використовується українськими захистниками в зоні ато</h3>
+            <div class="row">
+              <div class="col-4">
+                <img src="img/img1-1.jpg" alt="" class="img-fluid img-thumbnail">
+              </div>
+              <div class="col-4">
+                <img src="img/img1-2.jpg" alt="" class="img-fluid img-thumbnail">
+              </div>
+              <div class="col-4">
+                <img src="img/img1-3.jpg" alt="" class="img-fluid img-thumbnail">
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <h3 class="lead">зручна чистка в будь-яких умовах</h3>
+            <div class="row">
+              <div class="col-4">
+                <img src="img/img1-1.jpg" alt="" class="img-fluid img-thumbnail">
+              </div>
+              <div class="col-4">
+                <img src="img/img1-2.jpg" alt="" class="img-fluid img-thumbnail">
+              </div>
+              <div class="col-4">
+                <img src="img/img1-3.jpg" alt="" class="img-fluid img-thumbnail">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+  <hr>
+
+
+  <article id="partners">
+    <h1 class="text-center">ПАРТНЕРИ</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <img src="img/partner1.png" alt="" class="img-fluid">
+          <p class="text-center">SOME NAME</p>
+        </div>
+        <div class="col">
+          <img src="img/partner2.png" alt="" class="img-fluid">
+          <p class="text-center">SOME NAME</p>
+        </div>
+        <div class="col">
+          <img src="img/partner3.png" alt="" class="img-fluid">
+          <p class="text-center">SOME NAME</p>
+        </div>
+        <div class="col">
+          <img src="img/partner4.png" alt="" class="img-fluid">
+          <p class="text-center">SOME NAME</p>
+        </div>
+        <div class="col">
+          <img src="img/partner5.png" alt="" class="img-fluid">
+          <p class="text-center">SOME NAME</p>
+        </div>
+      </div>
+    </div>
+  </article>
+  <hr>
+  <footer id="footer">
+    <header>
+      <h1 class="text-center display-4">контакти</h1>
+    </header>
+    <div class="container">
+      <div class="row">
+        <section class="col-12 col-lg-6">
+          <table>
+            <tbody>
+              <tr>
+                <th scope="row">Назва підприємства:</th>
+                <td>ФОП Василий П.П.</td>
+              </tr>
+              <tr>
+                <th scope="row">Юридична адреса:</th>
+                <td>01151, м.Київ, вулиця Бульварно-Кудрявська, 27</td>
+              </tr>
+              <tr>
+                <th scope="row">Телефони:</th>
+                <td>+38 (097) 268-38-73<br>+38 (093) 810-37-38</td>
+              </tr>
+              <tr>
+                <th scope="row">E-mail:</th>
+                <td>mail@cleanshot.com.ua</td>
+              </tr>
+              <tr>
+                <th scope="row">Сторінки у соц. мережі</th>
+                <td>
+                  <a href="#" target="_blank">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-square-o fa-stack-2x"></i>
+                      <i class="fa fa-facebook fa-stack-1x"></i>
+                    </span>
+                  </a>
+                  <a href="#" target="_blank">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-square-o fa-stack-2x"></i>
+                      <i class="fa fa-youtube-play fa-stack-1x"></i>
+                    </span>
+                  </a>
+                  <a href="#" target="_blank">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-square-o fa-stack-2x"></i>
+                      <i class="fa fa-instagram fa-stack-1x"></i>
+                    </span>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section class="col-12 col-lg-6">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.443611095114!2d30.49788385054374!3d50.45146347937471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce607eff63ad%3A0x6e6c4ec69f2ab986!2z0LLRg9C70LjRhtGPINCR0YPQu9GM0LLQsNGA0L3Qvi3QmtGD0LTRgNGP0LLRgdGM0LrQsCwgMjcsINCa0LjRl9Cy!5e0!3m2!1suk!2sua!4v1484740144873" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </section>
+      </div>
+      <hr>
+      <p class="text-center lead"><small>&copy; 2014
+          <script>new Date().getFullYear()>2010&&document.write("- "+new Date().getFullYear());</script>
+          . всі права захищені. web developer: <a class="dev" href="https://www.facebook.com/osovyk" target="_blank">роман осовик</a>
+      </small></p>
+    </div>
+  </footer>
+
+<!-- Main JS -->
+<script src="js/main.js" defer></script>
+</body>
+</html>

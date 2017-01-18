@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X6 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="23.4147mm" height="19.5454mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 3334 2783"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <font id="FontID1" horiz-adv-x="666" font-variant="normal" style="fill-rule:nonzero" font-weight="400">
+	<font-face 
+		font-family="Arial">
+	</font-face>
+   <missing-glyph><path d="M0 0z"/></missing-glyph>
+  </font>
+  <font id="FontID0" horiz-adv-x="674" font-variant="normal" style="fill-rule:nonzero" font-style="normal" font-weight="900">
+	<font-face 
+		font-family="Myriad Pro Black">
+	</font-face>
+   <missing-glyph><path d="M0 0z"/></missing-glyph>
+   <glyph unicode="2" horiz-adv-x="573"><path d="M522.991 0l0 147.996 -226.999 0 0 2.00594 64.0165 50.9972c76.9973,61.9913 150.986,146.009 150.986,250.01 0,127.994 -88.9943,209.987 -239.999,209.987 -92.9869,0 -174.999,-30.9956 -224.993,-66.9868l48.9912 -129.017c36.0105,25.0164 85.0017,52.0002 139.008,52.0002 66.0032,0 96.9988,-33.0016 96.9988,-79.9869 -1.00297,-67.0061 -68.0091,-134.012 -199.996,-249.007l-89.9973 -79.0032 0 -108.996 481.985 0z"/></glyph>
+   <glyph unicode="1" horiz-adv-x="573"><path d="M236.007 0l173.996 0 0 650.002 -147.996 0 -185.009 -81.9928 29.009 -134.012 127.994 56.9957 2.00594 0 0 -490.993z"/></glyph>
+  </font>
+  <style type="text/css">
+   <![CDATA[
+    @font-face { font-family:"Arial";src:url("#FontID1") format(svg)}
+    @font-face { font-family:"Myriad Pro Black";src:url("#FontID0") format(svg)}
+    .fil0 {fill:#FEFEFE}
+    .fil1 {fill:#8E1617}
+    .fnt0 {font-weight:900;font-size:738.328px;font-family:'Myriad Pro Black'}
+    .fnt1 {font-weight:900;font-size:738.328px;font-family:'Myriad Pro Black'}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_901439888">
+   <polygon class="fil0" points="3334,0 3334,2166 1168,2166 1168,0 "/>
+   <polygon class="fil1" points="2252,541 2252,2707 86,2707 86,541 "/>
+   <polygon class="fil0" points="2166,617 2166,2783 0,2783 0,617 "/>
+   <text x="1603" y="1341"  class="fil1 fnt0">1</text>
+   <text x="2741" y="628"  class="fil1 fnt1">2</text>
+  </g>
+ </g>
+</svg>
